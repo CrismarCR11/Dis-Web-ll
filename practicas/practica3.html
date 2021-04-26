@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="practica3.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Desarrolle una función que le permita leer dos valores A y B e indicar si la suma de
+los dos números es par o impar-->
+        
+<div class="contenedor">
+   
+
+    <form action="" class="formulario1">
+        <h1>Ejercicio 1</h1>
+        <p>A</p>
+        <input id="A" type="text">
+
+        <p>+</p>
+        <p>B</p>
+        <input id="B" type="text"> <br>
+
+        <br>
+
+        <input type="button" class="btn" onclick="Comparar()" value="ejercicio 1"> <br> <br>
+        <br>
+        <input type="text" id="respuesta" class="respuesta">
+    </form>
+    
+    <form action="" class="formulario2">
+        <h1>Ejercicio 3</h1>
+        <p>N</p>
+        <input id="numero" type="text">
+
+        <input type="button" class="btn" onclick="factorial()" value="ejercicio 2"> <br> <br>
+       
+        <input type="text" id="respuesta1" class="respuesta">
+
+    </form>
+
+    
+
+    <form action="" class="formulario3">
+        <h1>Ejercicio 4</h1>
+        <p>N</p>
+        <input id="numero2" type="text">
+       
+        
+
+        <input type="button" class="btn" onclick="Primos()" value="ejercicio 3"> <br> <br>
+
+        <input type="text" id="respuesta2" class="respuesta">
+
+    </form>
+
+</div>
+
+<script>
+    /*Desarrolle una función que le permita leer dos valores A y B e indicar si la suma de los dos números es par o impar*/
+    function Comparar(A,B)
+        {
+            var a=parseFloat(document.getElementById('A').value);
+            var b=parseFloat(document.getElementById('B').value);
+            var res=a+b;
+            var resul1;
+            if (res%2==0)
+            {
+                resul1='La suma es un numero PAR'
+            }
+            else{
+                resul1='La suma es un numero IMPAR'
+            }
+            document.getElementById('respuesta').value=resul1;
+            
+        }
+    /*Desarrolle una función que le permita leer un valor entero positivo N y 
+    calcule su factorial.*/
+
+    function factorial(numero)
+        {
+            var a=parseFloat(document.getElementById('numero').value);
+            var res=1;
+            var resul1;
+            for(var i=1; i<=a; i++)
+            {
+                res=res*i;
+            }
+            document.getElementById('respuesta1').value=res;
+        }
+    /*Desarrolle una función que permita leer un valor N y que muestre la 
+    escritura de los N números Primos.*/
+    function Primos(numero)
+        {
+            var a=parseFloat(document.getElementById('numero2').value);
+            var res=1;
+            var resul1='';
+            for(var i=1; i<=a; i++)
+            {
+                res=CalculoP(i);
+                if(res==2)
+                {
+                    resul1=resul1 + ' '  + i ;
+                }
+            }
+            document.getElementById('respuesta2').value=resul1;
+            
+        }
+        function CalculoP(numero)
+        {
+            var contador=0;
+            var res=1;
+            var resul1;
+            for(var i=1; i<=numero; i++)
+            {
+                if(numero%i==0)
+                {
+                    contador++;
+                }
+            }
+            return contador;
+        }
+</script>
+
+</body>
+</html>

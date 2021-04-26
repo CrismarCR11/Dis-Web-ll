@@ -1,0 +1,31 @@
+
+.contenedor{
+    background: skyblue;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    text-align: center;
+}
+.formulario1{
+    background: green;
+    padding: 50px;
+    
+}
+.formulario2{
+    background: grey;
+    
+}
+.formulario3{
+    background: goldenrod;
+    
+}
+.btn{
+    padding: 20px;
+    font-size: 20px;
+    
+}
+.respuesta{
+    width: 50%;
+    height: 10%;
+
+}
