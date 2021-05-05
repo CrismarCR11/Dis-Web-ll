@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-image: url(/Proyecto-Final-5.0/img/registro2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+/*fondo estilos*/
+.contenido-Inicio{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+.contenido-fondo{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter:blur(10px);
+    background-color: rgba(39, 57, 75, 0.5);
+}
+/*contenedor fondo estilos*/
+.contenido-fondo div{
+    margin: 100px 48px;
+    color: white;
+    transition: all 500ms;
+}
+.contenido-fondo div p,
+.contenido-fondo div button{
+    margin-top: 30px;
+}
+.contenido-fondo div h2{
+    font-weight: 400;
+    font-size: 26px;
+}
+.contenido-fondo button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+.contenido-fondo button:hover{
+    background: #fff;
+    color: #595e63;
+}
+/*formulario stilo*/
+.contenido-Isecion-Registro{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    transition: left 500ms cubic-bezier(0.175,0.885,0.320,1.275);
+}
+.contenido-Isecion-Registro form{
+    width: 100%;
+    padding: 50px 20px;
+    background-image: url(/Proyecto-Final-5.0/img/registro1.jpg);
+    position: absolute;
+    border-radius: 20px;
+}
+.contenido-Isecion-Registro form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #748aa0;
+}
+.contenido-Isecion-Registro form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+.contenido-Isecion-Registro form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #595e63;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+.contenido-Isecion-Registro button:hover{
+    background: #fff;
+    color: #595e63;
+}
+.formulario-login{
+    opacity: 1;
+    display: block;
+}
+.formulario-Registro{
+    display: none;
+}
+@media screen and (max-width:850px){
+    main{
+        margin-top: 50px;
+    }
+    /*contenido fondo*/
+    .contenido-fondo{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .contenido-fondo div{
+        margin: 0px;
+        position:absolute;
+    }
+    /*contenido formulario*/
+    .contenido-Isecion-Registro{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+    .contenido-Isecion-Registro form{
+        position: relative;
+    }
+}

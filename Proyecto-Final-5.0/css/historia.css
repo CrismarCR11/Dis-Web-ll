@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-image: url(/Proyecto-Final-5.0/img/fondoh2.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*contenedor Primario*/
+.historia{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+}
+/*Contenedor secundario*/
+.fondo{
+    backdrop-filter:blur(2px);
+    background-color: rgba(131, 69, 18, 0.5);
+    width: 100%;
+    padding: 20px 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+/*Titulos*/
+ h1{
+    font-size: 30px;
+    text-align:center;
+    color: #fefeff;
+    /*font-weight: 500;*/
+    margin:20px ;
+}
+h2{
+    font-size: 20px;
+    text-align:left;
+    color: #fefeff;
+    margin: 10px ;
+}
+/*Primer documento*/
+.mision{
+    font-size: 15px;
+    text-align: left;
+    color: #e4ffff;
+    margin: 10px;
+}
+/*segundo documento*/
+.vision{
+    font-size: 15px;
+    text-align:left;
+    margin-bottom: 20px;
+    color: #e4ffff;
+    margin: 10px;
+}
+/*tercer documento*/
+.MAMÁJoba{
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #e4ffff;
+    margin: 10px;
+}
+
+
+@media screen and (max-width:800px){
+    
+}
